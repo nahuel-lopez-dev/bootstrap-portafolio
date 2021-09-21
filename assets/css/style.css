@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/***** Estilos generales *****/
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px; }
+
+/***** Variables globales en SASS *****/
+/** Variables de colores personalizados **/
+/*Variables de colores de Bootstrap*/
+/*colores a elegir para trabajar:*/
+/** Variables de fuentes de letras **/
+/***** Variables cambiadas en Bootstrap *****/
+/***** Para personalizar Bootstrap *****/
+/***** Fuentes de letras *****/
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url(../fonts/TrebuchetMS/TrebuchetMS.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url(../fonts/BebasNeue/BebasNeue.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url(../fonts/webSymbols/websymbols-regular-webfont.eot), url(../fonts/webSymbols/websymbols-regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/webSymbols/websymbols-regular-webfont.ttf) format("truetype"), url("../fonts/webSymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif; }
+
+.sombra {
+  box-shadow: 4px 4px 20px #acabab; }
+
+.rueda {
+  font-family: "WebSymbolsRegular"; }
+
+/*animación para hacer girar un elemento*/
+.rodar {
+  animation-name: rodar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes rodar {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
+
+.justBeNice {
+  font-family: "webSymbolsRegular";
+  font-style: italic;
+  font-size: 5vw;
+  color: #023047;
+  text-shadow: 2px 2px 5px #3da5e2; }
+
+header .nav {
+  min-height: 80px;
+  overflow: hidden;
+  background-color: #fff; }
+
+header .logo h2,
+header .logo p {
+  font-size: 16px;
+  display: inline-block; }
+
+header .logo .icono {
+  color: #bfbfbf; }
+
+header .logo svg {
+  width: 20px;
+  height: 20px; }
+
+header .logo p {
+  color: #777777; }
+
+header .menu .colorPortafolio {
+  background-color: #3da5e2; }
+
+header .menu .colorAcercaDe {
+  background-color: #005385; }
+
+header .menu .colorContacto {
+  background-color: #023047; }
+
+header .menu .colorPortafolio:hover {
+  background-color: #1992d8; }
+
+header .menu .colorAcercaDe:hover {
+  background-color: #00426a; }
+
+header .menu .colorContacto:hover {
+  background-color: #002538; }
+
+/* MAIN */
+/* Portafolio */
+.portafolio {
+  border-top: 5px solid #3da5e2;
+  background: #fff; }
+
+.portafolio .titulo {
+  color: #3da5e2;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+.portafolio .galeria .contenedor-imagen {
+  max-height: 180px;
+  overflow: hidden; }
+
+.portafolio .galeria .contenedor-imagen a {
+  background: #3da5e2;
+  display: inline-block; }
+
+.portafolio .galeria .contenedor-imagen:hover img {
+  opacity: .3; }
+
+/* Ventana Modal */
+.modal-dialog {
+  max-width: 1000px; }
+
+/* Acerca de */
+.acerca-de .foto .nombre {
+  color: #545454;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 2px; }
+
+.acerca-de .info .titulo {
+  color: #005385;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 30px; }
+
+.acerca-de .info .resumen {
+  letter-spacing: 1px; }
+
+.acerca-de .info .label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #005385;
+  margin-bottom: 10px; }
+
+.acerca-de .info .progress {
+  background: #005385;
+  border-radius: 0;
+  height: 25px; }
+
+.acerca-de .info .progress .progress-bar {
+  background: #3da5e2;
+  line-height: 25px;
+  padding-left: 20px; }
+
+.habilidades {
+  color: #005385; }
+
+/* Contacto */
+.contacto {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb; }
+
+.contacto .titulo {
+  color: #003855;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center; }
+
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"],
+.contacto .formulario textarea {
+  padding: 15px;
+  border: none;
+  font-family: 'Open Sans', sans-serif; }
+
+.contacto .formulario textarea {
+  height: 150px;
+  min-height: 150px;
+  max-height: 250px; }
+
+.contacto .formulario .boton {
+  background-color: #023047;
+  border: none;
+  padding: 7px 30px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  width: auto;
+  border-radius: 3px; }
+
+.contacto .formulario .boton:hover {
+  background: #002538; }
+
+/* Footer */
+.iconosFooter {
+  height: 7vh;
+  width: auto;
+  border: 1px solid #002538;
+  border-radius: 50%;
+  padding: 4px; }
+
+.infoFooter {
+  text-align: center;
+  order: 2;
+  color: #002538; }
+
+.logoFooter {
+  order: 1;
+  text-decoration: none;
+  color: #023047;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 4.5vw;
+  margin-right: 2vw;
+  text-shadow: 1px 1px 3px #3da5e2; }
+
+.logoFooter:hover {
+  color: #002538;
+  text-shadow: 2px 2px 5px #002538; }
+
+.pie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh; }
+
+/* MEDIAQUERIES */
+/* Dispositivo sm */
+@media screen and (max-width: 576px) {
+  .redes-sociales .icono {
+    width: 50px;
+    height: 50px; }
+  .redes-sociales .icono svg {
+    width: 25px;
+    height: 25px; } }
+
+/* Dispositivo md */
+@media screen and (max-width: 768px) {
+  .justBeNice {
+    font-size: 9vw; } }
+
+/* Dispositivo lg */
+@media screen and (max-width: 992px) {
+  .logo {
+    height: 76px; }
+  header .menu {
+    min-height: 76px; }
+  header .menu a {
+    width: 100%; }
+  .portafolio .galeria .contenedor-imagen:nth-child(1) {
+    order: 1; }
+  .portafolio .galeria .contenedor-imagen:nth-child(2) {
+    order: 3; }
+  .portafolio .galeria .contenedor-imagen:nth-child(3) {
+    order: 6; }
+  .portafolio .galeria .contenedor-imagen:nth-child(4) {
+    order: 2; }
+  .portafolio .galeria .contenedor-imagen:nth-child(5) {
+    order: 5; }
+  .portafolio .galeria .contenedor-imagen:nth-child(6) {
+    order: 4; }
+  .portafolio .galeria .contenedor-imagen:nth-child(7) {
+    order: 7; } }
+
+/* Dispositivo xl */
+/* Dispositivo xxl */
